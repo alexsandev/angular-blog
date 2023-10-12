@@ -1,0 +1,15 @@
+.container__info-cards {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 668px;
+    grid-column-gap: 10px;
+    margin: 0 10px;
+}
+
+.info-card__grid__small {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+    grid-column-gap: 10px;
+    grid-template-rows: 329px 329px;
+    grid-row-gap: 10px;
+}   
