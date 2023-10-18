@@ -1,5 +1,11 @@
 <a [routerLink]="target"> 
-    <div class="container__option" [ngClass]="optionColor" (mouseenter)="optionChangeColor()" (mouseleave)="optionChangeColor()">
+    <div 
+    class="container__option"
+    [ngClass]="optionColor" 
+    [routerLinkActive]="'activated'" 
+    [routerLinkActiveOptions]="{exact: true}"
+    (mouseenter)="changeColor()"
+    (mouseleave)="changeColor()">
         <span>{{textContent}}</span>
     </div>
 </a>

@@ -8,12 +8,12 @@ import { Component, Input } from '@angular/core';
 export class MenuBarOptionComponent {
 
   @Input() textContent: string = "";
-  @Input() target: string = "";
-  optionColor: string | null = null;
+  @Input() target: string | null = null;
+  optionColor : string = "";
 
   constructor() { }
 
-  optionChangeColor(){
-    this.optionColor = (this.optionColor == null) ? "option__mouseenter" : null;
+  changeColor() {
+    this.optionColor = (this.optionColor == "") ? "highlight" : "";
   }
 }

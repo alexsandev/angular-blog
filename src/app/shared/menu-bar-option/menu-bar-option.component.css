@@ -15,11 +15,19 @@ a {
     padding: 0 30px;
 }
 
-.option__mouseenter {
+.activated {
     background-color: white;
 }
 
-.option__mouseenter > span{
+.activated > span {
+    color: #363636;
+}
+
+.highlight {
+    background-color: white;
+}
+
+.highlight > span {
     color: #363636;
 }
 

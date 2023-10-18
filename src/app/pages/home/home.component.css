@@ -12,4 +12,15 @@
     grid-column-gap: 10px;
     grid-template-rows: 329px 329px;
     grid-row-gap: 10px;
-}   
+}
+  
+@media (max-width: 768px) {
+    .container__info-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-card__grid__small {
+        display: flex;
+        flex-direction: column;
+    }
+}
