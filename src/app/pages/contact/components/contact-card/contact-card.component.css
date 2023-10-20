@@ -1,0 +1,51 @@
+.container__contact-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 30px 10px;
+}
+
+.contact-card__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-card__image {
+    height: 100px;
+    margin-left: 50px;
+}
+
+.contact-card__image > img{
+    height: 100%;
+}
+
+.contact-card__link {
+    margin: 0 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkedin {
+    background-color: #0a66c2;
+}
+
+.github {
+    background-color: white;
+    justify-content: flex-end;
+}
+
+.github > div > div > span {
+    color: black;
+}
+
+.email {
+    background-color: grey;
+}
