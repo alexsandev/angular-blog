@@ -12,3 +12,20 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
+
+@media (max-width: 768px) {
+    .container__info-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 0 10px;
+    }
+    
+    .info-card__grid__small {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
