@@ -49,3 +49,20 @@ a {
 .email {
     background-color: grey;
 }
+
+@media (max-width: 425px ) {
+    .container__contact-card {
+        justify-content: center;
+    }
+
+    .contact-card__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-card__image {
+        margin: 0 50px;
+    }
+}

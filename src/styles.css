@@ -12,3 +12,19 @@ body{
     min-width: min-content;
     background-image: linear-gradient(to bottom right, #363636, #222222);
 }
+
+.white {
+    background-color: white;
+}
+
+.blue {
+    background-color: #445fee;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.yellow {
+    background-color: #ffcf24;
+}

@@ -1,0 +1,6 @@
+.container__small-card {
+    height: 329px;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
