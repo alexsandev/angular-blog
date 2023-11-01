@@ -1,13 +1,31 @@
 <div class="container__menu-bar">
-    <div class="menu-bar__logo">
-        <span> • Alexsandev • </span>
+    <div class="menu-bar__content">
+        <div class="menu-bar__logo" *ngIf="(innerWidth > 425) else ShowMenu">
+            <span> • Alexsandev • </span>
+        </div>
+        <ng-template #ShowMenu>
+            <div class="menu-bar__logo" (click)="openMenu()">
+                <span>Menu</span>
+            </div>
+        </ng-template>
+    
+        <div class="menu-bar__options">
+            <app-menu-bar-option target="" textContent="Home Page"></app-menu-bar-option>
+            <app-menu-bar-option target="portfolio" textContent="Portfolio"></app-menu-bar-option>
+            <app-menu-bar-option target="contact" textContent="Contact Now"></app-menu-bar-option>
+        </div>
+        <div class="menu-bar__final">
+            <app-menu-bar-option textContent="Login"></app-menu-bar-option>
+        </div>
     </div>
-    <div class="menu-bar__options">
-        <app-menu-bar-option target="" textContent="Home Page"></app-menu-bar-option>
-        <app-menu-bar-option target="portfolio" textContent="Portfolio"></app-menu-bar-option>
-        <app-menu-bar-option target="contact" textContent="Contact Now"></app-menu-bar-option>
-    </div>
-    <div class="menu-bar__final">
-        <app-menu-bar-option textContent="Login"></app-menu-bar-option>
+    
+    <div class="menu-bar__floating-options" *ngIf="floatingMenu">
+        <button routerLink="">Home Page</button>
+        <button routerLink="/portfolio">Portfolio</button>
+        <button routerLink="/contact">Contact</button>
     </div>
 </div>
+
+
+
+
