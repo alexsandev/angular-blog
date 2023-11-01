@@ -28,4 +28,8 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
+    .section-header__title {
+        justify-content: center;
+    }
 }
